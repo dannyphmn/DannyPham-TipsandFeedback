@@ -52,9 +52,16 @@
         </div>
       </form>
     </section>
+
     <!-- Make sure you include feedback.js, which handles form submission -->
     <script src="./scripts/feedback.js"></script>
-    <!-- If you want to make the feedback button functional, link the proper index.js -->
-    <script src="../scripts/index.js"></script>  <!-- Make sure this script is included if needed -->
+
+    <!-- Include this to handle home button click event -->
+    <script>
+      const homeBtn = document.getElementById('home-btn');
+      homeBtn.addEventListener('click', () => {
+        window.location.href = '/';  // Redirect to the homepage
+      });
+    </script>
   </body>
 </html>
