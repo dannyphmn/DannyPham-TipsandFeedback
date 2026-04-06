@@ -6,6 +6,6 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        - uses: actions/deploy-pages@v5
 
       # Add other steps here
